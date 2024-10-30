@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="container home">
+      <h3 class="instruction">Guess a number between 1 and 20</h3>
+      <h2 class="message">🎮Enter your guess...</h2>
+      <input type="number" class="guess" placeholder="Enter your guess..." />
+      <button class="btn check">Check!</button>
+      <div class="scoreboard">
+        <p>Score: <span class="score">10</span></p>
+        <p>High Score: <span class="highscore">20</span></p>
+      </div>
+    </div>
+
+    <div class="container win-container hidden">
+      <h2 class="win-message">🎉 Congratulations! You guessed it! 🎉</h2>
+      <div class="scoreboard">
+        <p>Score: <span class="win-score">10</span></p>
+        <p>High Score: <span class="win-highscore">20</span></p>
+      </div>
+      <button class="btn mr--top play-again">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
